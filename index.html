@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novalane | PR & Marketing for Artists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #1a1a1a;
+            --text-secondary: #555555;
+            --accent-light: #f9f9f9;
+            --border-color: #e5e5e5;
+            --font-serif: 'Cormorant Garamond', serif; /* For Headings */
+            --font-sans: 'Inter', sans-serif; /* For Body Text */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 400; }
+        h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+        h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: 600; }
+        p { color: var(--text-secondary); margin-bottom: 1.5rem; font-weight: 300; }
+        
+        /* UTILITIES */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--text-main);
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.3s ease;
+            border: 1px solid var(--text-main);
+        }
+        .btn:hover { background: transparent; color: var(--text-main); }
+        .section-padding { padding: 6rem 0; }
+
+        /* HEADER */
+        header { padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+
+        /* HERO */
+        .hero { min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero-content { max-width: 800px; }
+        .hero-tagline { 
+            font-family: var(--font-sans); 
+            text-transform: uppercase; 
+            letter-spacing: 0.2em; 
+            font-size: 0.8rem; 
+            margin-bottom: 2rem; 
+            color: #888; 
+        }
+
+        /* MISSION */
+        .mission { background-color: var(--accent-light); text-align: center; }
+        .mission p { max-width: 700px; margin: 0 auto; font-size: 1.25rem; line-height: 1.8; color: #333; }
+
+        /* SERVICES SPLIT */
+        .services-split { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+        .service-col { padding: 5rem 4rem; border-bottom: 1px solid var(--border-color); }
+        .service-col:first-child { border-right: 1px solid var(--border-color); }
+        
+        .service-tag { 
+            text-transform: uppercase; 
+            letter-spacing: 0.15em; 
+            font-size: 0.75rem; 
+            color: #999; 
+            margin-bottom: 1rem; 
+            display: block; 
+        }
+
+        .price-list { list-style: none; margin-top: 2rem; }
+        .price-list li { 
+            border-top: 1px solid #eee; 
+            padding: 1rem 0; 
+            display: flex; 
+            justify-content: space-between; 
+            font-size: 0.95rem; 
+        }
+        .price-list li span.price { font-weight: 500; color: #000; }
+
+        /* FOOTER */
+        footer { padding: 4rem 0; text-align: center; font-size: 0.85rem; color: #999; border-top: 1px solid var(--border-color); }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .services-split { grid-template-columns: 1fr; }
+            .service-col:first-child { border-right: none; }
+            .container { padding: 0 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Novalane USA</div>
+                <a href="mailto:contact@novalaneusa.com" style="text-decoration: none; color: inherit; font-size: 0.9rem;">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-tagline">For artists & creatives</div>
+            <h1>Visible Artists.<br>Respected Practices.<br>Sustainable Careers.</h1>
+            <p>We help artists turn meaningful milestones into long-term visibility, authority, and opportunity through tailored PR and marketing strategies.</p>
+            <br>
+            <a href="mailto:contact@novalaneusa.com" class="btn">Request Intro Call</a>
+        </div>
+    </section>
+
+    <section class="section-padding mission">
+        <div class="container">
+            <p>"Artists should not have to sell themselves to be recognized. Novalane exists to make artists visible, credible, and confidently positioned in the public conversation."</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="services-split">
+            
+            <div class="service-col">
+                <span class="service-tag">Visibility & Authority</span>
+                <h2>Novalane PR</h2>
+                <p>For artists who create meaningful work and care deeply about recognition, credibility, and prestige. We help you turn exhibitions and awards into lasting authority.</p>
+                
+                <h3>Core Services</h3>
+                <ul class="price-list">
+                    <li>
+                        <span>Discovery & Strategic Assessment</span>
+                        <span class="price">$450</span>
+                    </li>
+                    <li>
+                        <span>Asset Development & Positioning</span>
+                        <span class="price">From $1,600</span>
+                    </li>
+                    <li>
+                        <span>Connection Building & Media Relations</span>
+                        <span class="price">From $450/mo</span>
+                    </li>
+                </ul>
+                <p style="font-size: 0.85rem; margin-top: 1rem; color: #888;">*Includes media kits, narrative alignment, and curator outreach.</p>
+            </div>
+
+            <div class="service-col">
+                <span class="service-tag">Income & Infrastructure</span>
+                <h2>Novalane Marketing</h2>
+                <p>For artists who want to build a sustainable income without turning their practice into constant self-promotion. We build the systems that help you sell.</p>
+                
+                <h3>Core Services</h3>
+                <ul class="price-list">
+                    <li>
+                        <span>Sales-Focused Discovery</span>
+                        <span class="price">Custom</span>
+                    </li>
+                    <li>
+                        <span>Asset & Sales Infrastructure Build</span>
+                        <span class="price">From $900</span>
+                    </li>
+                    <li>
+                        <span>Ongoing Sales Campaigns</span>
+                        <span class="price">From $250/mo</span>
+                    </li>
+                </ul>
+                <p style="font-size: 0.85rem; margin-top: 1rem; color: #888;">*Includes Shopify setup, email strategy, and collector growth.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Novalane USA. All Rights Reserved.</p>
+            <br>
+            <p>Chicago, IL</p>
+        </div>
+    </footer>
+
+</body>
+</html>
