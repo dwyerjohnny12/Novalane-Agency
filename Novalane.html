@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOVALANE | Art Gallery Consultancy</title>
+    <style>
+        /* This CSS works offline and is 100% free */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0e0e0e; /* Deep Gallery Black */
+            color: #f4f4f4;
+            font-family: 'Segoe UI', serif; /* Using system fonts for safety */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: 40px 0;
+        }
+        .hero {
+            padding: 100px 0;
+            border-bottom: 1px solid #333;
+        }
+        h1 {
+            font-size: 72px;
+            font-weight: 300;
+            margin: 0;
+            line-height: 1.1;
+        }
+        .italic { font-style: italic; color: #a58b5e; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            margin-top: 80px;
+        }
+        .service-card {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+        .service-card h3 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            color: #888;
+            font-size: 14px;
+        }
+        .footer {
+            text-align: center;
+            padding: 100px 0;
+        }
+        .cta-link {
+            font-size: 32px;
+            color: #f4f4f4;
+            text-decoration: none;
+            border-bottom: 1px solid #a58b5e;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <div style="font-weight: bold;">NOVALANE</div>
+        <div>STRATEGY &nbsp;&nbsp; CURATION &nbsp;&nbsp; CONTACT</div>
+    </nav>
+
+    <div class="hero">
+        <h1>Aesthetic <br> <span class="italic">Intelligence.</span></h1>
+        <p style="max-width: 500px; margin-top: 30px; font-size: 18px; color: #aaa;">
+            Strategic counsel for contemporary art galleries. Elevating curatorial vision through market intelligence.
+        </p>
+    </div>
+
+    <div class="grid">
+        <div class="service-card">
+            <h3>Curatorial Vision</h3>
+            <p>Defining identity and narrative for global institutions.</p>
+        </div>
+        <div class="service-card">
+            <h3>Digital Strategy</h3>
+            <p>Modernizing the gallery experience for a digital-first world.</p>
+        </div>
+        <div class="service-card">
+            <h3>Market Advisory</h3>
+            <p>Connecting elite collectors with emerging talent.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="mailto:liina@novalane.com" class="cta-link">Start a Consultation</a>
+        <p style="margin-top: 50px; font-size: 10px; opacity: 0.3; letter-spacing: 2px;">© 2026 NOVALANE STUDIO</p>
+    </div>
+</div>
+
+</body>
+</html>
